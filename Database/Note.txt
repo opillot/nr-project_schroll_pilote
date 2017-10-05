@@ -1,0 +1,31 @@
+﻿/*
+Do not change the database path or name variables.
+Any sqlcmd variables will be properly substituted during 
+build and deployment.
+*/
+
+/*
+##################Règles générales###################
+-L'anglicisme est utilisé pour tous les éléments excepté les commentaires
+-Commentez au maximum votre code, et bien entendu de manière précise et compréhensible
+
+
+
+
+##################Conventions d'écriture###################
+Ci-dessous les rêgles d'écriture de tous les éléments codés. L'objectif rendre le code lisible, portable et compréhensible de tous
+
+	#Nom des champs :
+	L'écriture des champs doit respecter le principe du Camel Case,type dromadaryCase. les espaces, underscores et autrescaractères spéciaux sont proscrits.
+	Les noms de champ doivent êtres implicite et compréhensible, n'oublions les règles générales(Anglicisme, ...)  
+
+
+	#####Les contraintes######
+
+		#Clé primaire : PK_Nom de la table
+
+		#Clé étrangère : FK"_"Nom de la table de la contrainte"."Nom du champ de la table contrainte"_"Nom de la table de référence
+
+		#Unique : AK"_"Nom de la table"."Nom du ou des champ(s) devant respecter la contrainte d'unicité, dans le cas de plusieurs champs ces derniers doivent être séparés par "-"
+
+*/

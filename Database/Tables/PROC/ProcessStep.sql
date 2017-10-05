@@ -1,0 +1,21 @@
+﻿CREATE TABLE [PROC].[ProcessStep]
+(
+	[SysRecordId] [int] NOT NULL IDENTITY,
+	[SysStatus] [int] NOT NULL DEFAULT 1,
+	[SysUserId] [int]  NOT NULL DEFAULT -1, 
+	[ProcessStepId] [int] NOT NULL,
+	[ProcessHeaderId] [int] NOT NULL,
+	[StepTypeId] [int] NOT NULL,
+	[StepActionTypeId] [int] NULL,
+	[StepProcessTypeId] [int] NULL,
+	[Visible] [tinyint] NULL,
+	[Mandatory] [tinyint] NULL,
+	[Fixed] [tinyint] NULL,
+	[NextStepId] [int] NOT NULL,
+	[PreviousStepId] [int] NOT NULL,
+	[Title] [varchar](50) NOT NULL,
+	[Description] [varchar](255) NULL,
+	[StepProcessFieldId] [int] NULL,
+	[StepProcessValue] [varchar](50) NULL,
+    CONSTRAINT [PK_ProcessStep] PRIMARY KEY ([SysRecordId]), 
+)

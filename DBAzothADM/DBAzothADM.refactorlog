@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="dacddca9-7711-4ba6-9eb5-63b9c82f8d80" ChangeDateTime="04/28/2017 14:42:33">
+    <Property Name="ElementName" Value="[dbo].[Deduction].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Deduction]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="DeductionId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="a0ae3b04-4348-46b7-9d6f-112b5b90d2f2" ChangeDateTime="05/30/2017 14:21:39">
+    <Property Name="ElementName" Value="[EXT].[Deduction].[Description]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[EXT].[Deduction]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Type" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="cc8e2172-2654-40c4-b5f4-f3bdc21c5148" ChangeDateTime="06/01/2017 15:20:19">
+    <Property Name="ElementName" Value="[EXT].[WorkSite].[ContactId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[EXT].[WorkSite]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="CompanySite" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="7ee06126-cb8f-479d-b611-ff5365158918" ChangeDateTime="06/01/2017 15:21:41">
+    <Property Name="ElementName" Value="[EXT].[WorkSite].[BusinessKey]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[EXT].[WorkSite]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="CompanyId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d1684097-56b5-498b-97d2-07e43977cd50" ChangeDateTime="06/01/2017 15:22:15">
+    <Property Name="ElementName" Value="[EXT].[WorkSite].[CompanyId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[EXT].[WorkSite]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="BusinessKey" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="c489e58b-b24e-44b7-80d2-6207fed63d37" ChangeDateTime="06/01/2017 15:22:50">
+    <Property Name="ElementName" Value="[EXT].[WorkSite].[Address]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[EXT].[WorkSite]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="AddressLine" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="f91c8ca5-8ba2-47db-ba55-3f795830deb1" ChangeDateTime="06/01/2017 15:23:42">
+    <Property Name="ElementName" Value="[EXT].[WorkSite].[CountryName]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[EXT].[WorkSite]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Phone" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="3da5285a-9c5c-4a84-9065-8e511d7f753e" ChangeDateTime="06/01/2017 15:23:54">
+    <Property Name="ElementName" Value="[EXT].[WorkSite].[Phone]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[EXT].[WorkSite]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="AttachCompanyId" />
+  </Operation>
+</Operations>

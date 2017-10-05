@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>DBAzothSchroll</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{b38aa38f-af6c-45df-9ad1-305c4dccd9a9}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql120DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>DBAzothSchroll</RootNamespace>
+    <AssemblyName>DBAzothSchroll</AssemblyName>
+    <ModelCollation>1033, CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <SqlTargetName>DBAzothSchroll</SqlTargetName>
+  </PropertyGroup>
+  <!-- VS10 without SP1 will not have VisualStudioVersion set, so do that here -->
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <!-- Default to the v10.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="SECURITY" />
+    <Folder Include="Programmability" />
+    <Folder Include="Tables" />
+    <Folder Include="Tables\REF" />
+    <Folder Include="Tables\SYNCH" />
+    <Folder Include="Tables\EXT" />
+    <Folder Include="Tables\PROC" />
+    <Folder Include="Tables\__Tables" />
+    <Folder Include="View" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="Note.txt" />
+    <Build Include="SECURITY\CREATE_SCHEMAS.sql" />
+    <Build Include="Programmability\SYNCH.sp_synchroGenerateProcess.sql" />
+    <Build Include="Programmability\SYNCH.sp_synchroData.sql" />
+    <Build Include="Programmability\SYNCH.sp_synchroGenerateProcessForRecord.sql" />
+    <Build Include="Tables\REF\REF.CustomerAddress.sql" />
+    <Build Include="Tables\REF\REF.ProgramHeaderStatus.sql" />
+    <Build Include="Tables\REF\REF.ProgramLineStatus.sql" />
+    <Build Include="Tables\REF\REF.vCompany.sql" />
+    <Build Include="Tables\REF\REF.vMaterial.sql" />
+    <Build Include="Tables\REF\REF.vProgramHeader.sql" />
+    <Build Include="Tables\REF\REF.vProgramHeaderComment.sql" />
+    <Build Include="Tables\REF\REF.vProgramLine.sql" />
+    <Build Include="Tables\REF\REF.vResponsibilityCenter.sql" />
+    <Build Include="Tables\REF\REF.vServiceOrder.sql" />
+    <Build Include="Tables\REF\REF.vServiceOrderComment.sql" />
+    <Build Include="Tables\REF\REF.vTaskModule.sql" />
+    <Build Include="Tables\REF\REF.vUser.sql" />
+    <Build Include="Tables\REF\REF.WorkType.sql" />
+    <Build Include="Tables\SYNCH\SYNCH.CustommerAddress.sql" />
+    <Build Include="Tables\SYNCH\SYNCH.ServiceOrderComment.sql" />
+    <Build Include="Tables\SYNCH\SYNCH.vCompany.sql" />
+    <Build Include="Tables\SYNCH\SYNCH.vDeduction.sql" />
+    <Build Include="Tables\SYNCH\SYNCH.vMaterial.sql" />
+    <Build Include="Tables\SYNCH\SYNCH.vProgramHeader.sql" />
+    <Build Include="Tables\SYNCH\SYNCH.vProgramHeaderComment.sql" />
+    <Build Include="Tables\SYNCH\SYNCH.vProgramLine.sql" />
+    <Build Include="Tables\SYNCH\SYNCH.vReason.sql" />
+    <Build Include="Tables\SYNCH\SYNCH.vResponsibilityCenter.sql" />
+    <Build Include="Tables\SYNCH\SYNCH.ServiceOrder.sql" />
+    <Build Include="Tables\SYNCH\SYNCH.vTaskModule.sql" />
+    <Build Include="Tables\SYNCH\SYNCH.vUser.sql" />
+    <Build Include="Tables\SYNCH\SYNCH.WasteTmp.sql" />
+    <Build Include="Tables\SYNCH\SYNCH.vWasteCenter.sql" />
+    <Build Include="Tables\EXT\WasteCenter.sql" />
+    <Build Include="Tables\EXT\Waste.sql" />
+    <Build Include="Tables\EXT\Deductions.sql" />
+    <Build Include="Tables\EXT\Reason.sql" />
+    <Build Include="Tables\PROC\ServiceOrderTask.sql" />
+    <Build Include="Tables\PROC\ServiceOrderWork.sql" />
+    <Build Include="Tables\__Tables\Documents.sql" />
+    <Build Include="Tables\__Tables\Geolocalisation_Old.sql" />
+    <Build Include="Tables\__Tables\MatieresClients.sql" />
+    <Build Include="Tables\__Tables\Provenances.sql" />
+    <Build Include="Tables\__Tables\SystemesPesees.sql" />
+    <Build Include="Tables\__Tables\TramesDecompositions.sql" />
+    <Build Include="Tables\SYNCH\SYNCH.ServiceOrderTmp.sql" />
+    <Build Include="Programmability\SYNCH.sp_synchroDataAdd.sql" />
+    <Build Include="Programmability\SYNCH.sp_synchroDataDelete.sql" />
+    <Build Include="Programmability\SYNCH.sp_synchroDataUpdate.sql" />
+    <Build Include="Programmability\SYNCH.sp_synchroImportExtData.sql" />
+    <Build Include="Programmability\SYNCH.sp_synchroInitGroupUser.sql" />
+    <Build Include="Tables\REF\REF.GeoLocalisation.sql" />
+    <Build Include="Tables\EXT\WasteCommon.sql" />
+    <Build Include="Tables\EXT\WasteCustomer.sql" />
+    <Build Include="Tables\EXT\WasteSite.sql" />
+    <Build Include="Tables\PROC\ServiceOrderTaskLine.sql" />
+    <Build Include="Tables\SYNCH\SYNCH.DeliveryLineTmp.sql" />
+    <Build Include="Tables\SYNCH\SYNCH.WasteCommon.sql" />
+    <Build Include="Tables\SYNCH\SYNCH.WasteCustomer.sql" />
+    <Build Include="Tables\SYNCH\SYNCH.WasteSite.sql" />
+    <Build Include="Tables\REF\REF.ServiceOrderLine.sql" />
+    <Build Include="Tables\SYNCH\SYNCH.ServiceOrderLine.sql" />
+    <Build Include="Tables\SYNCH\SYNCH.vWeightServerSetup.sql" />
+    <Build Include="Tables\EXT\WeightServerSetup.sql" />
+    <Build Include="Tables\PROC\ProcessHeader.sql" />
+    <Build Include="Tables\PROC\ProcessStep.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="App.refactorlog" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.publish.xml" />
+    <None Include="DBSchroll.sqlproj.user" />
+    <None Include="import_nav_data.sql" />
+    <None Include="insert_static_data.sql" />
+  </ItemGroup>
+</Project>

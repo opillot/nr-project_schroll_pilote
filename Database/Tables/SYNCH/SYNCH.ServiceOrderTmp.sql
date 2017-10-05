@@ -1,0 +1,37 @@
+﻿CREATE TABLE [SYNCH].[ServiceOrderTmp](
+	[CompanyCode] [varchar](30) NOT NULL,
+	[ServiceOrderCode] [varchar](20) NOT NULL,
+	[CustomerCode] [varchar](20) NULL,
+	[InterventionAddressCode] [varchar](20) NULL,
+	[Name] [varchar](125) NULL,
+	[Address] [varchar](125) NULL,
+	[PostCode] [varchar](20) NULL,
+	[City] [varchar](30) NULL,
+	[Country_Region Code] [varchar](10) NULL,
+	[LocationCode] [varchar](20) NULL,
+	[LocationDescription] [varchar](150) NOT NULL,
+	[MaterialLineCode] [int] NULL,
+	[MaterialTypeCode] [varchar](20) NULL,
+	[MaterialTypeDescription] [varchar](150) NOT NULL,
+	[MaterialQuantity] [int] NULL,
+	[WasteCode] [varchar](20) NULL,
+	[WasteDescription] [varchar](100) NOT NULL,
+	[WorkCode] [varchar](20) NULL,
+	[WorkDescription] [varchar](30) NOT NULL,
+	[WasteManagementContactCode] [varchar](20) NULL,
+	[WasteManagementInterventionCode] [varchar](20) NULL,
+	[Operationhours] [varchar](17) NULL,
+	[OpeningTime] [varchar](50) NULL,
+	[PhoneNumber] [varchar](30) NULL,
+	[CustomerReference] [varchar](20) NULL,
+	[SignatureRequired] [tinyint] NULL,
+	[ScanRequired] [tinyint] NULL,
+	[WeightRequired] [tinyint] NULL,
+	[Vendor] [varchar](10) NULL,
+	[Assistant] [varchar](10) NULL,
+ CONSTRAINT [PK_ServiceOrder] PRIMARY KEY CLUSTERED 
+(
+	[CompanyCode] ASC,
+	[ServiceOrderCode] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]

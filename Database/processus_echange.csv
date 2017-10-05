@@ -1,0 +1,31 @@
+AccountId	ProcessHeaderId	ProcessStepId	StepTypeId	StepActionId	StepProcessId	Visible	Mandatory	Fixed	NextStepId	PreviousStepId	Title	Description
+1	1	1	3	-1	1	0	0	0	2	-1	Début de travail	
+1	1	2	3	-1	3	0	0	0	3	1	Début opération (client)	
+1	1	3	4	-1	-1	0	0	0	4	2	Retrait matériel	
+1	1	4	4	-1	-1	0	0	0	5	3	Placement matériel chez client	
+1	1	5	2	3	-1	1	1	0	6	4	Scan matériel placé	
+1	1	6	2	4	-1	1	1	0	7	5	Signature client	
+1	1	7	3	-1	4	0	0	0	8	6	Fin opération (client)	
+1	1	8	4	-1	-1	0	0	0	9	7	Déplacement centre de traitement	
+1	1	9	1	5003	-1	1	1	0	10	8	Choix centre de traitement 0=>Externe, 1=>Interne	
+1	1	10	3	-1	1	0	0	0	11	9	Début opération (réception)	
+1	1	11	4	-1	-1	0	0	0	12	10	Passage pont à bascule	
+1	1	12	4	-1	-1	0	0	0	13	11	Vidage benne	
+1	1	13	2	1	-1	1	1	0	14	12	Photo matières	
+1	1	14	4	-1	-1	0	0	0	15	13	Passage pont à bascule => ticket de pesée	
+1	1	15	2	1	-1	1	1	0	16	14	Photo ticket de pesée	
+1	1	16	2	2	-1	1	1	0	17	15	Saisie No ticket de pesée	
+1	1	17	2	2	-1	1	1	0	18	16	Saisie Poids Net en Kg	
+1	1	18	2	5000	-1	1	1	0	19	17	Saisie des matières	
+1	1	19	3	-1	4	0	0	0	30	18	Fin d'opération (réception)	
+1	1	20	3	-1	3	0	0	0	21	9	Début opération (réception)	
+1	1	21	4	-1	-1	0			22	20	Passage pont à bascule => ticket de pesée	
+1	1	22	1	5004	-1	1	1	0	23	21	Choix Réceptionniste 0=>Chauffeur, 1=>Autre	
+1	1	23	2	3	-1	1	1	0	24	22	Scann badge réceptionniste	
+1	1	24	2	3	-1	1	1	0	25	23	Scann du ticket => No ticket de pesée	
+1	1	25	2	5001	-1	1	1	0	26	24	Saisie des déductions	
+1	1	26	2	5000	-1	1	1	0	27	25	Saisie des matières	
+1	1	27	2	5002	-1	1	1	0	28	26	Envoie des données vers PEGASE	
+1	1	28	2	1	-1	1	1	0	29	27	Photo matières	
+1	1	29	3	-1	4	0	0	0	30	28	Fin d'opération (réception)	
+1	1	30	3	-1	2	0	0	0	-1	19, 30	Fin de travail	

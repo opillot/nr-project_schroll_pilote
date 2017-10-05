@@ -1,0 +1,22 @@
+﻿CREATE TABLE [AZT].[ProgramLine]
+(
+	[RecordId] INT NOT NULL  PRIMARY KEY IDENTITY,
+	[RecordDateTime] datetime NOT NULL DEFAULT GetDate(),
+	[AztRecordId] INT NOT NULL,
+	[AztStatus] [int] NOT NULL DEFAULT 1,
+	[AztUserId] [int] NOT NULL DEFAULT -1,
+	[AztSecurityCount] [int] NOT NULL DEFAULT 0,
+	[CompanyCode] [varchar](30) NOT NULL,
+	[ProgramHeaderCode] [varchar](20) NOT NULL,
+	[ProgramLineCode] [int] NOT NULL,
+	[StartTime] [time](7) NOT NULL,
+	[EndTime] [time](7) NOT NULL,
+	[HandlerCount] [int] NOT NULL,
+	[HandlingTime] [time](7) NOT NULL,
+	[Status] [int] NOT NULL,
+	[OperationCustomer] [tinyint] NOT NULL,
+	[OperationWeight] [tinyint] NOT NULL,
+	[ReasonCode] [int] NOT NULL,
+	[DetailedReason] [varchar](200) NOT NULL,
+    [Processed] TINYINT NOT NULL DEFAULT 0,
+)
