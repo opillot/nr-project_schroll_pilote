@@ -181,11 +181,9 @@ Insert Into [DBAzothADM].[ACC].[Field] ([AccountId], [TableId], [FieldId], [Name
 /*						GeoLocalisation					*/
 /*--------------------------------------------------*/
 Insert Into [DBAzothADM].[ACC].[Field] ([AccountId], [TableId], [FieldId], [Name], [Type], [Mandatory], [PrimaryKey], [Publish], [LinkedTable], [LinkedField], [SendToReferential]) 
-		Values(1, 200, 2, 'ProgramHeaderCode', 'varchar(20)', 1, 0, 0, 0, 0, 1);
+		Values(1, 200, 3, 'ProgramHeaderCode', 'varchar(20)', 1, 0, 0, 0, 0, 1);
 Insert Into [DBAzothADM].[ACC].[Field] ([AccountId], [TableId], [FieldId], [Name], [Type], [Mandatory], [PrimaryKey], [Publish], [LinkedTable], [LinkedField], [SendToReferential]) 
-		Values(1, 200, 3, 'CompanyCode', 'varchar(30)', 1, 0, 0, 0, 0, 1);
-Insert Into [DBAzothADM].[ACC].[Field] ([AccountId], [TableId], [FieldId], [Name], [Type], [Mandatory], [PrimaryKey], [Publish], [LinkedTable], [LinkedField], [SendToReferential]) 
-		Values(1, 200, 5, 'Date', 'datetime', 1, 0, 0, 0, 0, 1);
+		Values(1, 200, 2, 'Date', 'datetime', 1, 0, 0, 0, 0, 1);
 Insert Into [DBAzothADM].[ACC].[Field] ([AccountId], [TableId], [FieldId], [Name], [Type], [Mandatory], [PrimaryKey], [Publish], [LinkedTable], [LinkedField], [SendToReferential]) 
 		Values(1, 200, 6, 'Latitude', 'decimal(11, 8)', 1, 0, 0, 0, 0, 1);
 Insert Into [DBAzothADM].[ACC].[Field] ([AccountId], [TableId], [FieldId], [Name], [Type], [Mandatory], [PrimaryKey], [Publish], [LinkedTable], [LinkedField], [SendToReferential]) 

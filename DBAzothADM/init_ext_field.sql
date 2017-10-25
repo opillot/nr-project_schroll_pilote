@@ -101,6 +101,12 @@ Insert Into [DBAzothADM].[ACC].[Field_Ext] ([AccountId], [TableId], [FieldId], [
 		Values(1, 6, 50000, 'OpeningTime', 'varchar(50)', 1, 1, 0, 0, 0);
 
 
+/*--------------------------------------------------*/
+/*						Geolocalisation				*/
+/*--------------------------------------------------*/
+Insert Into [DBAzothADM].[ACC].[Field_Ext] ([AccountId], [TableId], [FieldId], [Name], [Type], [Mandatory], [PrimaryKey], [Publish], [LinkedTable], [LinkedField]) 
+		Values(1, 200, 50000, 'CompanyCode', 'varchar(30)', 1, 0, 0, 0, 0);
+
 /*--------------------------------------------------------------------------------------------------*/
 /*																									*/
 /*											Extension table											*/

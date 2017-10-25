@@ -13,8 +13,8 @@
 	[Visible] TINYINT NULL, 
 	[Mandatory] TINYINT NULL,
 	[Fixed] TINYINT NULL,
-	[NextTaskId] INT NOT NULL, 
-	[PreviousTaskId] INT NOT NULL, 
+	[NextTaskId] VARCHAR(25) NOT NULL, 
+	[PreviousTaskId] VARCHAR(25) NOT NULL, 
     [Title] VARCHAR(50) NOT NULL, 
     [Processed] TINYINT NOT NULL DEFAULT 0, 
     CONSTRAINT [PK_ServiceOrderTask] PRIMARY KEY ([SysRecordId]) 
